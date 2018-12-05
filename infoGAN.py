@@ -279,7 +279,7 @@ class infoGAN(object):
 
         samples = (samples + 1) / 2
         utils.save_images(samples[:image_frame_dim * image_frame_dim, :, :, :], [image_frame_dim, image_frame_dim],
-                          self.result_dir + '/' + self.dataset + '/' + self.model_name + '/' + self.model_name + '_cont_epoch%03d' % epoch + '.png')
+                          self.result_dir + '/' + self.dataset + '/' + self.model_name + '/' + self.model_name + '_cont_epoch%03d' % epoch + '.pdf')
 
     def save(self):
         save_dir = os.path.join(self.save_dir, self.dataset, self.model_name)
