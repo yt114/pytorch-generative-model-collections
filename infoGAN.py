@@ -249,7 +249,7 @@ class infoGAN(object):
                                  self.epoch)
         utils.generate_animation(self.result_dir + '/' + self.dataset + '/' + self.model_name + '/' + self.model_name + '_cont',
                                  self.epoch)
-        self.loss_plot(self.train_hist, os.path.join(self.save_dir, self.dataset, self.model_name), self.model_name)
+        #self.loss_plot(self.train_hist, os.path.join(self.save_dir, self.dataset, self.model_name), self.model_name)
 
     def visualize_results(self, epoch):
         self.G.eval()
